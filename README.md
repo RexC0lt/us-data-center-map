@@ -11,14 +11,17 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-Or enable GitHub Pages (Settings -> Pages -> Deploy from branch -> /root).
+Or enable GitHub Pages (Settings → Pages → Deploy from branch → `/root`).
 
 ## Data
 
-`data/centers.geojson` is the dataset the map renders. It starts as a seed of
-major US data center hubs and can be regenerated/expanded with:
+`data/centers.geojson` holds 100+ US data center locations researched in 2026
+(CBRE / Avison Young market reports, operator announcements), each tagged with
+type (hyperscale / colocation / mixed), operators, and market notes. It can be
+regenerated/expanded from live sources with:
 
 ```bash
+pip install requests
 python3 scripts/fetch_data.py
 ```
 

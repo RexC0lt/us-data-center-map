@@ -1,17 +1,1962 @@
 {
-  "type": "FeatureCollection",
-  "features": [
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-77.4874, 39.0438]}, "properties": {"name": "Ashburn / Data Center Alley", "operator": "Multiple (Equinix, Digital Realty, QTS, AWS)", "city": "Ashburn, VA", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-96.8968, 32.8943]}, "properties": {"name": "Dallas / Fort Worth hub", "operator": "Multiple (Equinix, Digital Realty, CyrusOne, AWS)", "city": "Dallas, TX", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-87.7498, 41.8376]}, "properties": {"name": "Chicago data center hub", "operator": "Multiple (Equinix, QTS, Digital Realty)", "city": "Chicago, IL", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-84.3880, 33.7490]}, "properties": {"name": "Atlanta data center hub", "operator": "Multiple (QTS, Digital Realty, Meta, Google)", "city": "Atlanta, GA", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.4194, 37.7749]}, "properties": {"name": "San Francisco / Silicon Valley", "operator": "Multiple (Equinix, Digital Realty, Google, Meta)", "city": "San Francisco, CA", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.3321, 47.6062]}, "properties": {"name": "Seattle hub", "operator": "Multiple (Amazon, Microsoft, Google)", "city": "Seattle, WA", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.0060, 40.7128]}, "properties": {"name": "New York / New Jersey hub", "operator": "Multiple (Equinix, Digital Realty, CyrusOne)", "city": "New York, NY", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-80.1918, 25.7617]}, "properties": {"name": "Miami hub (LATAM gateway)", "operator": "Multiple (Equinix, Terremark)", "city": "Miami, FL", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-112.0740, 33.4484]}, "properties": {"name": "Phoenix hub", "operator": "Multiple (CyrusOne, Digital Realty, QTS)", "city": "Phoenix, AZ", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-104.9903, 39.7392]}, "properties": {"name": "Denver hub", "operator": "Multiple (CoreSite, Digital Realty)", "city": "Denver, CO", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.6765, 45.5231]}, "properties": {"name": "Portland / Hillsboro hub", "operator": "Multiple (Digital Realty, Flexential, AWS)", "city": "Portland, OR", "source": "seed"}},
-    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-118.2437, 34.0522]}, "properties": {"name": "Los Angeles hub", "operator": "Multiple (Equinix, CoreSite, Digital Realty)", "city": "Los Angeles, CA", "source": "seed"}}
-  ]
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.4874,
+     39.0438
+    ]
+   },
+   "properties": {
+    "name": "Loudoun County / Data Center Alley",
+    "operator": "Equinix, Digital Realty, QTS, AWS, Google, Microsoft",
+    "city": "Ashburn",
+    "state": "VA",
+    "type": "hyperscale",
+    "note": "Largest US market; ~6,485 MW inventory (Avison Young Q1 2026); 0.2% vacancy (CBRE H1 2026)",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.4756,
+     38.7509
+    ]
+   },
+   "properties": {
+    "name": "Prince William County campus",
+    "operator": "Microsoft, Google, Meta, QTS",
+    "city": "Manassas",
+    "state": "VA",
+    "type": "hyperscale",
+    "note": "Second NoVA campus cluster",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.3572,
+     38.9586
+    ]
+   },
+   "properties": {
+    "name": "Reston / Herndon",
+    "operator": "Equinix, CoreSite, Sabey, Digital Realty",
+    "city": "Reston",
+    "state": "VA",
+    "type": "colo",
+    "note": "Major colo hub, ~20 facilities",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.436,
+     37.5407
+    ]
+   },
+   "properties": {
+    "name": "Richmond / Henrico County",
+    "operator": "Meta, QTS, Digital Realty, CyrusOne",
+    "city": "Richmond",
+    "state": "VA",
+    "type": "mixed",
+    "note": "Meta Henrico campus; growing secondary market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.0653,
+     36.8529
+    ]
+   },
+   "properties": {
+    "name": "Virginia Beach",
+    "operator": "CyrusOne, Digital Realty",
+    "city": "Virginia Beach",
+    "state": "VA",
+    "type": "colo",
+    "note": "Subsea cable landing + colo",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -96.797,
+     32.7767
+    ]
+   },
+   "properties": {
+    "name": "Dallas-Fort Worth",
+    "operator": "Equinix, Digital Realty, CyrusOne, QTS, Switch",
+    "city": "Dallas",
+    "state": "TX",
+    "type": "mixed",
+    "note": "#2 US market; ~3,704 MW inventory (Q1 2026); 3rd NA market over 1 GW",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -97.3308,
+     32.7555
+    ]
+   },
+   "properties": {
+    "name": "Fort Worth",
+    "operator": "Meta, Switch, QTS",
+    "city": "Fort Worth",
+    "state": "TX",
+    "type": "hyperscale",
+    "note": "Meta Fort Worth hyperscale campus",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.3698,
+     29.7604
+    ]
+   },
+   "properties": {
+    "name": "Houston",
+    "operator": "Digital Realty, CyrusOne, Equinix, Cologix",
+    "city": "Houston",
+    "state": "TX",
+    "type": "colo",
+    "note": "Large colo market; energy hub",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -97.7431,
+     30.2672
+    ]
+   },
+   "properties": {
+    "name": "Austin",
+    "operator": "AWS, Google, Microsoft, Oracle, Meta, Digital Realty, CyrusOne",
+    "city": "Austin",
+    "state": "TX",
+    "type": "hyperscale",
+    "note": "Fastest-growing US market; +1,909 MW in Q1 2026; 0.14% vacancy",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -98.4936,
+     29.4241
+    ]
+   },
+   "properties": {
+    "name": "San Antonio",
+    "operator": "Microsoft Azure, CyrusOne, Digital Realty, AWS",
+    "city": "San Antonio",
+    "state": "TX",
+    "type": "hyperscale",
+    "note": "Microsoft South Central US region; 0.20% vacancy",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.485,
+     31.7619
+    ]
+   },
+   "properties": {
+    "name": "El Paso",
+    "operator": "Various colo",
+    "city": "El Paso",
+    "state": "TX",
+    "type": "colo",
+    "note": "Border/enterprise market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.388,
+     33.749
+    ]
+   },
+   "properties": {
+    "name": "Atlanta metro",
+    "operator": "QTS, Digital Realty, Equinix, Google, Meta, Microsoft",
+    "city": "Atlanta",
+    "state": "GA",
+    "type": "hyperscale",
+    "note": "#3 US market; ~3,257 MW; top market for construction H1 2026 (2,882 MW)",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.8577,
+     33.5968
+    ]
+   },
+   "properties": {
+    "name": "Covington / Newton County",
+    "operator": "Meta",
+    "city": "Covington",
+    "state": "GA",
+    "type": "hyperscale",
+    "note": "Meta Newton County campus",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.9751,
+     33.4735
+    ]
+   },
+   "properties": {
+    "name": "Augusta",
+    "operator": "QTS, Georgia Power colo",
+    "city": "Augusta",
+    "state": "GA",
+    "type": "colo",
+    "note": "Emerging market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.8431,
+     35.2271
+    ]
+   },
+   "properties": {
+    "name": "Charlotte",
+    "operator": "Digital Realty, CyrusOne, T5, Aligned",
+    "city": "Charlotte",
+    "state": "NC",
+    "type": "colo",
+    "note": "Charlotte-Raleigh primary market (CBRE)",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.6382,
+     35.7796
+    ]
+   },
+   "properties": {
+    "name": "Raleigh / Durham",
+    "operator": "Digital Realty, CyrusOne, RagingWire (soon)",
+    "city": "Raleigh",
+    "state": "NC",
+    "type": "colo",
+    "note": "Research Triangle market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.9311,
+     32.7765
+    ]
+   },
+   "properties": {
+    "name": "Charleston",
+    "operator": "Netrality, DC Blox",
+    "city": "Charleston",
+    "state": "SC",
+    "type": "colo",
+    "note": "DC Blox regional network",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.0348,
+     34.0007
+    ]
+   },
+   "properties": {
+    "name": "Columbia",
+    "operator": "DC Blox, 365 Data Centers",
+    "city": "Columbia",
+    "state": "SC",
+    "type": "colo",
+    "note": "Secondary market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.394,
+     34.8526
+    ]
+   },
+   "properties": {
+    "name": "Greenville",
+    "operator": "DC Blox",
+    "city": "Greenville",
+    "state": "SC",
+    "type": "colo",
+    "note": "Secondary market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.6557,
+     30.3322
+    ]
+   },
+   "properties": {
+    "name": "Jacksonville",
+    "operator": "Cologix, QTS, Digital Realty",
+    "city": "Jacksonville",
+    "state": "FL",
+    "type": "colo",
+    "note": "Subsea landing + colo",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.1918,
+     25.7617
+    ]
+   },
+   "properties": {
+    "name": "Miami",
+    "operator": "Equinix, Terremark, QTS, Digital Realty",
+    "city": "Miami",
+    "state": "FL",
+    "type": "colo",
+    "note": "LATAM gateway; subsea hub",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.4572,
+     27.9506
+    ]
+   },
+   "properties": {
+    "name": "Tampa",
+    "operator": "Cologix, C7, 365 Data Centers",
+    "city": "Tampa",
+    "state": "FL",
+    "type": "colo",
+    "note": "Growing FL market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.3792,
+     28.5383
+    ]
+   },
+   "properties": {
+    "name": "Orlando",
+    "operator": "Various colo",
+    "city": "Orlando",
+    "state": "FL",
+    "type": "colo",
+    "note": "Tourism/enterprise",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.8025,
+     33.5207
+    ]
+   },
+   "properties": {
+    "name": "Birmingham",
+    "operator": "DC Blox, 365 Data Centers",
+    "city": "Birmingham",
+    "state": "AL",
+    "type": "colo",
+    "note": "Southeast colo",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.9784,
+     34.7304
+    ]
+   },
+   "properties": {
+    "name": "Huntsville",
+    "operator": "Meta, Google, various",
+    "city": "Huntsville",
+    "state": "AL",
+    "type": "hyperscale",
+    "note": "Meta Huntsville AI campus (announced 2024); Google presence",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.3,
+     32.3668
+    ]
+   },
+   "properties": {
+    "name": "Montgomery",
+    "operator": "Meta (announced), various",
+    "city": "Montgomery",
+    "state": "AL",
+    "type": "hyperscale",
+    "note": "Meta Montgomery County AI campus announced",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.7816,
+     36.1627
+    ]
+   },
+   "properties": {
+    "name": "Nashville",
+    "operator": "Google, Digital Realty, CyrusOne, QTS",
+    "city": "Nashville",
+    "state": "TN",
+    "type": "mixed",
+    "note": "Google cloud region + colo",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -90.049,
+     35.1495
+    ]
+   },
+   "properties": {
+    "name": "Memphis",
+    "operator": "CyrusOne, Digital Realty",
+    "city": "Memphis",
+    "state": "TN",
+    "type": "colo",
+    "note": "Mississippi River logistics + colo",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.9207,
+     35.9606
+    ]
+   },
+   "properties": {
+    "name": "Knoxville",
+    "operator": "Various colo",
+    "city": "Knoxville",
+    "state": "TN",
+    "type": "colo",
+    "note": "TVA power market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.3097,
+     35.0456
+    ]
+   },
+   "properties": {
+    "name": "Chattanooga",
+    "operator": "Various",
+    "city": "Chattanooga",
+    "state": "TN",
+    "type": "colo",
+    "note": "Gigabit city, enterprise DCs",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -90.0715,
+     29.9511
+    ]
+   },
+   "properties": {
+    "name": "New Orleans",
+    "operator": "QTS, various",
+    "city": "New Orleans",
+    "state": "LA",
+    "type": "colo",
+    "note": "Gulf coast market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -90.1848,
+     32.2988
+    ]
+   },
+   "properties": {
+    "name": "Jackson",
+    "operator": "Various",
+    "city": "Jackson",
+    "state": "MS",
+    "type": "colo",
+    "note": "State capital market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -92.2896,
+     34.7465
+    ]
+   },
+   "properties": {
+    "name": "Little Rock",
+    "operator": "Various colo",
+    "city": "Little Rock",
+    "state": "AR",
+    "type": "colo",
+    "note": "Secondary market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.6298,
+     41.8781
+    ]
+   },
+   "properties": {
+    "name": "Chicago metro",
+    "operator": "Equinix, QTS, Digital Realty, CyrusOne",
+    "city": "Chicago",
+    "state": "IL",
+    "type": "mixed",
+    "note": "Top-5 US market; 526 MW absorption Q1 2026; 350 S. Riverside flagship",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.982,
+     42.0303
+    ]
+   },
+   "properties": {
+    "name": "Elk Grove Village",
+    "operator": "CyrusOne, QTS, Digital Realty",
+    "city": "Elk Grove Village",
+    "state": "IL",
+    "type": "colo",
+    "note": "Largest suburban Chicago colo cluster",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.5786,
+     39.0997
+    ]
+   },
+   "properties": {
+    "name": "Kansas City",
+    "operator": "CyrusOne, Digital Realty, QTS, Huntsman",
+    "city": "Kansas City",
+    "state": "MO",
+    "type": "colo",
+    "note": "Central US network hub",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -90.1994,
+     38.627
+    ]
+   },
+   "properties": {
+    "name": "St. Louis",
+    "operator": "Digital Realty, CyrusOne, Equinix",
+    "city": "St. Louis",
+    "state": "MO",
+    "type": "colo",
+    "note": "Mississippi Valley market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -93.265,
+     44.9778
+    ]
+   },
+   "properties": {
+    "name": "Minneapolis",
+    "operator": "QTS, Cologix, Digital Realty, Sabey",
+    "city": "Minneapolis",
+    "state": "MN",
+    "type": "colo",
+    "note": "Upper Midwest hub",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.8608,
+     41.2619
+    ]
+   },
+   "properties": {
+    "name": "Omaha / Council Bluffs",
+    "operator": "Google, Meta, CyrusOne, Toll?",
+    "city": "Council Bluffs",
+    "state": "IA",
+    "type": "hyperscale",
+    "note": "Google + Meta campuses; 'Iowa corridor'",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -93.8753,
+     41.6118
+    ]
+   },
+   "properties": {
+    "name": "Des Moines / Waukee",
+    "operator": "Microsoft, Apple, Google",
+    "city": "Waukee",
+    "state": "IA",
+    "type": "hyperscale",
+    "note": "Microsoft West Des Moines; Apple Waukee campus; >12 hyperscale DCs statewide",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -82.8085,
+     40.0817
+    ]
+   },
+   "properties": {
+    "name": "Columbus / New Albany",
+    "operator": "AWS, Google, Meta, QTS, CyrusOne",
+    "city": "New Albany",
+    "state": "OH",
+    "type": "hyperscale",
+    "note": "AWS US East (Ohio) region; Meta + Google campuses",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.6944,
+     41.4993
+    ]
+   },
+   "properties": {
+    "name": "Cleveland",
+    "operator": "CyrusOne, Digital Realty, 365 Data Centers",
+    "city": "Cleveland",
+    "state": "OH",
+    "type": "colo",
+    "note": "Lake Erie market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.512,
+     39.1031
+    ]
+   },
+   "properties": {
+    "name": "Cincinnati",
+    "operator": "CyrusOne, Digital Realty",
+    "city": "Cincinnati",
+    "state": "OH",
+    "type": "colo",
+    "note": "Ohio Valley market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.0458,
+     42.3314
+    ]
+   },
+   "properties": {
+    "name": "Detroit",
+    "operator": "Switch, Digital Realty, QTS",
+    "city": "Detroit",
+    "state": "MI",
+    "type": "colo",
+    "note": "Midwest connectivity hub",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.6681,
+     42.9634
+    ]
+   },
+   "properties": {
+    "name": "Grand Rapids",
+    "operator": "Switch SuperNAP, 365 Data Centers",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "type": "colo",
+    "note": "Switch SuperNAP campus",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.1581,
+     39.7684
+    ]
+   },
+   "properties": {
+    "name": "Indianapolis",
+    "operator": "Digital Realty, CyrusOne, QTS",
+    "city": "Indianapolis",
+    "state": "IN",
+    "type": "colo",
+    "note": "Crossroads of America market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.9065,
+     43.0389
+    ]
+   },
+   "properties": {
+    "name": "Milwaukee",
+    "operator": "CyrusOne, DataBank",
+    "city": "Milwaukee",
+    "state": "WI",
+    "type": "colo",
+    "note": "Lake Michigan market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.89,
+     42.71
+    ]
+   },
+   "properties": {
+    "name": "Mount Pleasant",
+    "operator": "Microsoft Azure (Wisconsin region)",
+    "city": "Mount Pleasant",
+    "state": "WI",
+    "type": "hyperscale",
+    "note": "Microsoft Azure campus, $3.3B+ investment",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -89.4012,
+     43.0731
+    ]
+   },
+   "properties": {
+    "name": "Madison",
+    "operator": "Various",
+    "city": "Madison",
+    "state": "WI",
+    "type": "colo",
+    "note": "State capital market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -97.3301,
+     37.6872
+    ]
+   },
+   "properties": {
+    "name": "Wichita",
+    "operator": "Various colo",
+    "city": "Wichita",
+    "state": "KS",
+    "type": "colo",
+    "note": "Central Kansas market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.006,
+     40.7128
+    ]
+   },
+   "properties": {
+    "name": "New York / Northern NJ",
+    "operator": "Equinix, Digital Realty, CyrusOne, QTS, Switch",
+    "city": "New York",
+    "state": "NY",
+    "type": "mixed",
+    "note": "#3-4 US market; 10+ MW pricing up 19% H1 2026",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.0565,
+     40.7895
+    ]
+   },
+   "properties": {
+    "name": "Secaucus / Meadowlands",
+    "operator": "Equinix, Digital Realty, Cologix",
+    "city": "Secaucus",
+    "state": "NJ",
+    "type": "colo",
+    "note": "800 8th Ave-style carrier hotels",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -74.4515,
+     40.5543
+    ]
+   },
+   "properties": {
+    "name": "Piscataway NJ",
+    "operator": "QTS, Digital Realty",
+    "city": "Piscataway",
+    "state": "NJ",
+    "type": "colo",
+    "note": "NJ Turnpike colo corridor",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.1652,
+     39.9526
+    ]
+   },
+   "properties": {
+    "name": "Philadelphia",
+    "operator": "Equinix, CyrusOne, Digital Realty, CoreSite",
+    "city": "Philadelphia",
+    "state": "PA",
+    "type": "colo",
+    "note": "Mid-Atlantic hub",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.9959,
+     40.4406
+    ]
+   },
+   "properties": {
+    "name": "Pittsburgh",
+    "operator": "CoreSite, Cologix, 365 Data Centers",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "type": "colo",
+    "note": "Allegheny market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.4902,
+     40.6084
+    ]
+   },
+   "properties": {
+    "name": "Allentown / Lehigh Valley",
+    "operator": "Digital Realty, QTS, CyrusOne",
+    "city": "Allentown",
+    "state": "PA",
+    "type": "colo",
+    "note": "Fast-growing tertiary market (CBRE)",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -71.0589,
+     42.3601
+    ]
+   },
+   "properties": {
+    "name": "Boston",
+    "operator": "Equinix, CoreSite, Digital Realty, QTS",
+    "city": "Boston",
+    "state": "MA",
+    "type": "mixed",
+    "note": "New England hub; secondary market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -71.4128,
+     41.824
+    ]
+   },
+   "properties": {
+    "name": "Providence",
+    "operator": "Various colo",
+    "city": "Providence",
+    "state": "RI",
+    "type": "colo",
+    "note": "Secondary New England",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -72.6734,
+     41.7658
+    ]
+   },
+   "properties": {
+    "name": "Hartford",
+    "operator": "Various colo",
+    "city": "Hartford",
+    "state": "CT",
+    "type": "colo",
+    "note": "Insurance/enterprise market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -71.4548,
+     42.9956
+    ]
+   },
+   "properties": {
+    "name": "Manchester NH",
+    "operator": "Various colo",
+    "city": "Manchester",
+    "state": "NH",
+    "type": "colo",
+    "note": "Boston exurb market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -70.2568,
+     43.6591
+    ]
+   },
+   "properties": {
+    "name": "Portland ME",
+    "operator": "Various",
+    "city": "Portland",
+    "state": "ME",
+    "type": "colo",
+    "note": "Northern New England",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.8784,
+     42.8864
+    ]
+   },
+   "properties": {
+    "name": "Buffalo",
+    "operator": "Colo5? various",
+    "city": "Buffalo",
+    "state": "NY",
+    "type": "colo",
+    "note": "Niagara frontier, cheap power",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.7567,
+     42.6528
+    ]
+   },
+   "properties": {
+    "name": "Albany",
+    "operator": "Various",
+    "city": "Albany",
+    "state": "NY",
+    "type": "colo",
+    "note": "NY state capital",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.1474,
+     43.0481
+    ]
+   },
+   "properties": {
+    "name": "Syracuse",
+    "operator": "Various",
+    "city": "Syracuse",
+    "state": "NY",
+    "type": "colo",
+    "note": "Upstate NY",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.6088,
+     43.1566
+    ]
+   },
+   "properties": {
+    "name": "Rochester",
+    "operator": "Various",
+    "city": "Rochester",
+    "state": "NY",
+    "type": "colo",
+    "note": "Upstate NY",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.9552,
+     37.3541
+    ]
+   },
+   "properties": {
+    "name": "Silicon Valley / Santa Clara",
+    "operator": "Equinix, Digital Realty, QTS, CoreSite",
+    "city": "Santa Clara",
+    "state": "CA",
+    "type": "hyperscale",
+    "note": "Primary market (CBRE); 8x8, 11666... major colo",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.8863,
+     37.3382
+    ]
+   },
+   "properties": {
+    "name": "San Jose",
+    "operator": "Equinix, Digital Realty",
+    "city": "San Jose",
+    "state": "CA",
+    "type": "colo",
+    "note": "SV core",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4194,
+     37.7749
+    ]
+   },
+   "properties": {
+    "name": "San Francisco",
+    "operator": "Equinix, Digital Realty, 365 Data Centers",
+    "city": "San Francisco",
+    "state": "CA",
+    "type": "colo",
+    "note": "415 Mission etc.",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -118.2437,
+     34.0522
+    ]
+   },
+   "properties": {
+    "name": "Los Angeles",
+    "operator": "Equinix, CoreSite, Digital Realty, CyrusOne",
+    "city": "Los Angeles",
+    "state": "CA",
+    "type": "colo",
+    "note": "2nd largest US colo market; One Wilshire",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.1611,
+     32.7157
+    ]
+   },
+   "properties": {
+    "name": "San Diego",
+    "operator": "Equinix, Digital Realty",
+    "city": "San Diego",
+    "state": "CA",
+    "type": "colo",
+    "note": "Border + subsea",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.4944,
+     38.5816
+    ]
+   },
+   "properties": {
+    "name": "Sacramento",
+    "operator": "RagingWire, Digital Realty",
+    "city": "Sacramento",
+    "state": "CA",
+    "type": "colo",
+    "note": "RagingWire campus; cheap power",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.3321,
+     47.6062
+    ]
+   },
+   "properties": {
+    "name": "Seattle",
+    "operator": "Amazon, Microsoft, Google, Equinix, Sabey",
+    "city": "Seattle",
+    "state": "WA",
+    "type": "hyperscale",
+    "note": "Primary market; HQ hyperscale",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4443,
+     47.2529
+    ]
+   },
+   "properties": {
+    "name": "Tacoma / Kent WA",
+    "operator": "Various colo",
+    "city": "Tacoma",
+    "state": "WA",
+    "type": "colo",
+    "note": "Seattle exurbs",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -119.8515,
+     47.2343
+    ]
+   },
+   "properties": {
+    "name": "Quincy / Central Washington",
+    "operator": "Microsoft, Google, Yahoo (legacy), Intuit",
+    "city": "Quincy",
+    "state": "WA",
+    "type": "hyperscale",
+    "note": "Grant County PUD hydro power; Microsoft West US 2",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.9898,
+     45.5231
+    ]
+   },
+   "properties": {
+    "name": "Portland / Hillsboro",
+    "operator": "Digital Realty, Flexential, QTS, AWS (region)",
+    "city": "Hillsboro",
+    "state": "OR",
+    "type": "hyperscale",
+    "note": "AWS US West (Oregon) region; Hillsboro primary market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -123.0868,
+     44.0521
+    ]
+   },
+   "properties": {
+    "name": "Eugene",
+    "operator": "Various",
+    "city": "Eugene",
+    "state": "OR",
+    "type": "colo",
+    "note": "Secondary Oregon",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.9903,
+     39.7392
+    ]
+   },
+   "properties": {
+    "name": "Denver",
+    "operator": "CoreSite, Digital Realty, CyrusOne, QTS",
+    "city": "Denver",
+    "state": "CO",
+    "type": "mixed",
+    "note": "Secondary market; CoreSite HQ market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.8214,
+     38.8339
+    ]
+   },
+   "properties": {
+    "name": "Colorado Springs",
+    "operator": "Various",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "type": "colo",
+    "note": "Front Range secondary",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.891,
+     40.7608
+    ]
+   },
+   "properties": {
+    "name": "Salt Lake City",
+    "operator": "Flexential, DataPipe? Digital Realty, SilverWest?",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "type": "colo",
+    "note": "0.18% vacancy (Q1 2026); fast-growing",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.992,
+     40.307
+    ]
+   },
+   "properties": {
+    "name": "Provo / Eagle Mountain",
+    "operator": "Meta",
+    "city": "Eagle Mountain",
+    "state": "UT",
+    "type": "hyperscale",
+    "note": "Meta Eagle Mountain campus",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -116.2023,
+     43.615
+    ]
+   },
+   "properties": {
+    "name": "Boise",
+    "operator": "Meta (announced), various",
+    "city": "Boise",
+    "state": "ID",
+    "type": "hyperscale",
+    "note": "Meta Boise campus announced 2025",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -115.1398,
+     36.1699
+    ]
+   },
+   "properties": {
+    "name": "Las Vegas",
+    "operator": "Switch SuperNAP, Digital Realty, Equinix, QTS",
+    "city": "Las Vegas",
+    "state": "NV",
+    "type": "hyperscale",
+    "note": "Switch SuperNAP flagship; largest US DC campus",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -119.8138,
+     39.5296
+    ]
+   },
+   "properties": {
+    "name": "Reno / Storey County",
+    "operator": "Switch, Google, Apple",
+    "city": "Reno",
+    "state": "NV",
+    "type": "hyperscale",
+    "note": "Tahoe-Reno; Switch Citadel; Google Storey County; Apple Reno",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -112.074,
+     33.4484
+    ]
+   },
+   "properties": {
+    "name": "Phoenix metro",
+    "operator": "Digital Realty, QTS, CyrusOne, Aligned, Iron Mountain",
+    "city": "Phoenix",
+    "state": "AZ",
+    "type": "hyperscale",
+    "note": "Top-5 primary market; huge growth",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.8315,
+     33.4152
+    ]
+   },
+   "properties": {
+    "name": "Mesa",
+    "operator": "Various",
+    "city": "Mesa",
+    "state": "AZ",
+    "type": "colo",
+    "note": "Phoenix east valley",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -110.9747,
+     32.2226
+    ]
+   },
+   "properties": {
+    "name": "Tucson",
+    "operator": "Various",
+    "city": "Tucson",
+    "state": "AZ",
+    "type": "colo",
+    "note": "Secondary AZ",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.6504,
+     35.0844
+    ]
+   },
+   "properties": {
+    "name": "Albuquerque",
+    "operator": "Various colo, Sandia",
+    "city": "Albuquerque",
+    "state": "NM",
+    "type": "colo",
+    "note": "Los Lunas nearby: Meta",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.738,
+     34.805
+    ]
+   },
+   "properties": {
+    "name": "Los Lunas",
+    "operator": "Meta",
+    "city": "Los Lunas",
+    "state": "NM",
+    "type": "hyperscale",
+    "note": "Meta Los Lunas campus (Valencia County)",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -117.426,
+     47.6588
+    ]
+   },
+   "properties": {
+    "name": "Spokane",
+    "operator": "Various colo",
+    "city": "Spokane",
+    "state": "WA",
+    "type": "colo",
+    "note": "Inland Northwest",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -149.9003,
+     61.2181
+    ]
+   },
+   "properties": {
+    "name": "Anchorage",
+    "operator": "Various",
+    "city": "Anchorage",
+    "state": "AK",
+    "type": "colo",
+    "note": "Alaska market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -157.8583,
+     21.3069
+    ]
+   },
+   "properties": {
+    "name": "Honolulu",
+    "operator": "Various",
+    "city": "Honolulu",
+    "state": "HI",
+    "type": "colo",
+    "note": "Pacific hub",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -66.1057,
+     18.4655
+    ]
+   },
+   "properties": {
+    "name": "San Juan",
+    "operator": "Various",
+    "city": "San Juan",
+    "state": "PR",
+    "type": "colo",
+    "note": "US territory; Caribbean hub",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -97.5164,
+     35.4676
+    ]
+   },
+   "properties": {
+    "name": "Oklahoma City",
+    "operator": "Various colo",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "type": "colo",
+    "note": "Central Plains",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.9928,
+     36.154
+    ]
+   },
+   "properties": {
+    "name": "Tulsa",
+    "operator": "Various",
+    "city": "Tulsa",
+    "state": "OK",
+    "type": "colo",
+    "note": "Secondary OK",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.9345,
+     41.2565
+    ]
+   },
+   "properties": {
+    "name": "Omaha",
+    "operator": "Various",
+    "city": "Omaha",
+    "state": "NE",
+    "type": "colo",
+    "note": "Nebraska market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -96.7313,
+     43.546
+    ]
+   },
+   "properties": {
+    "name": "Sioux Falls",
+    "operator": "Various",
+    "city": "Sioux Falls",
+    "state": "SD",
+    "type": "colo",
+    "note": "Dakotas hub",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -96.7898,
+     46.8772
+    ]
+   },
+   "properties": {
+    "name": "Fargo",
+    "operator": "Various",
+    "city": "Fargo",
+    "state": "ND",
+    "type": "colo",
+    "note": "Upper Plains",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.5006,
+     45.7833
+    ]
+   },
+   "properties": {
+    "name": "Billings",
+    "operator": "Various",
+    "city": "Billings",
+    "state": "MT",
+    "type": "colo",
+    "note": "Montana market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -111.0429,
+     45.677
+    ]
+   },
+   "properties": {
+    "name": "Bozeman",
+    "operator": "Various",
+    "city": "Bozeman",
+    "state": "MT",
+    "type": "colo",
+    "note": "Growing MT market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.8202,
+     41.14
+    ]
+   },
+   "properties": {
+    "name": "Cheyenne",
+    "operator": "Microsoft Azure (Wyoming region), Green House Data",
+    "city": "Cheyenne",
+    "state": "WY",
+    "type": "hyperscale",
+    "note": "Microsoft West US (Cheyenne); wind power",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.6326,
+     38.3498
+    ]
+   },
+   "properties": {
+    "name": "Charleston",
+    "operator": "Various",
+    "city": "Charleston",
+    "state": "WV",
+    "type": "colo",
+    "note": "WV market",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.7585,
+     38.2527
+    ]
+   },
+   "properties": {
+    "name": "Louisville",
+    "operator": "Various colo",
+    "city": "Louisville",
+    "state": "KY",
+    "type": "colo",
+    "note": "Ohio Valley secondary",
+    "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.1574,
+     36.0615
+    ]
+   },
+   "properties": {
+    "name": "Fayetteville",
+    "operator": "QTS (world's largest? DC campus)",
+    "city": "Fayetteville",
+    "state": "AR",
+    "type": "colo",
+    "note": "QTS Fayetteville - among largest US facilities",
+    "source": "research-2026"
+   }
+  }
+ ]
 }
