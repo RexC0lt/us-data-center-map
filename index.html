@@ -90,6 +90,7 @@
             text: (p.name + ' ' + (p.operator || '') + ' ' + p.city + ' ' + p.state + ' ' + type).toLowerCase()
           });
         });
+        Object.values(layers).forEach(g => clusters.addLayer(g));
         map.addLayer(clusters);
         Object.keys(TYPE_STYLE).forEach(type => {
           if (!layers[type]) return;
