@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-77.4874, 39.0438]}, "properties": {"name": "Ashburn / Data Center Alley", "operator": "Multiple (Equinix, Digital Realty, QTS, AWS)", "city": "Ashburn, VA", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-96.8968, 32.8943]}, "properties": {"name": "Dallas / Fort Worth hub", "operator": "Multiple (Equinix, Digital Realty, CyrusOne, AWS)", "city": "Dallas, TX", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-87.7498, 41.8376]}, "properties": {"name": "Chicago data center hub", "operator": "Multiple (Equinix, QTS, Digital Realty)", "city": "Chicago, IL", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-84.3880, 33.7490]}, "properties": {"name": "Atlanta data center hub", "operator": "Multiple (QTS, Digital Realty, Meta, Google)", "city": "Atlanta, GA", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.4194, 37.7749]}, "properties": {"name": "San Francisco / Silicon Valley", "operator": "Multiple (Equinix, Digital Realty, Google, Meta)", "city": "San Francisco, CA", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.3321, 47.6062]}, "properties": {"name": "Seattle hub", "operator": "Multiple (Amazon, Microsoft, Google)", "city": "Seattle, WA", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-74.0060, 40.7128]}, "properties": {"name": "New York / New Jersey hub", "operator": "Multiple (Equinix, Digital Realty, CyrusOne)", "city": "New York, NY", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-80.1918, 25.7617]}, "properties": {"name": "Miami hub (LATAM gateway)", "operator": "Multiple (Equinix, Terremark)", "city": "Miami, FL", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-112.0740, 33.4484]}, "properties": {"name": "Phoenix hub", "operator": "Multiple (CyrusOne, Digital Realty, QTS)", "city": "Phoenix, AZ", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-104.9903, 39.7392]}, "properties": {"name": "Denver hub", "operator": "Multiple (CoreSite, Digital Realty)", "city": "Denver, CO", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-122.6765, 45.5231]}, "properties": {"name": "Portland / Hillsboro hub", "operator": "Multiple (Digital Realty, Flexential, AWS)", "city": "Portland, OR", "source": "seed"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-118.2437, 34.0522]}, "properties": {"name": "Los Angeles hub", "operator": "Multiple (Equinix, CoreSite, Digital Realty)", "city": "Los Angeles, CA", "source": "seed"}}
+  ]
+}
