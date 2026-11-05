@@ -18,7 +18,9 @@
     "type": "hyperscale",
     "note": "Largest US market; ~6,485 MW inventory (Avison Young Q1 2026); 0.2% vacancy (CBRE H1 2026)",
     "source": "research-2026",
-    "image_file": "File:Data_centers_in_Ashburn.jpg"
+    "image_file": "File:Data_centers_in_Ashburn.jpg",
+    "power_mw": 6485,
+    "power_basis": "market inventory, Avison Young Q1 2026"
    }
   },
   {
@@ -37,7 +39,8 @@
     "state": "VA",
     "type": "hyperscale",
     "note": "Second NoVA campus cluster",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -56,7 +59,8 @@
     "state": "VA",
     "type": "colo",
     "note": "Major colo hub, ~20 facilities",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -75,7 +79,8 @@
     "state": "VA",
     "type": "mixed",
     "note": "Meta Henrico campus; growing secondary market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -94,7 +99,8 @@
     "state": "VA",
     "type": "colo",
     "note": "Subsea cable landing + colo",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -113,7 +119,9 @@
     "state": "TX",
     "type": "mixed",
     "note": "#2 US market; ~3,704 MW inventory (Q1 2026); 3rd NA market over 1 GW",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": 3704,
+    "power_basis": "market inventory, Avison Young Q1 2026"
    }
   },
   {
@@ -132,7 +140,8 @@
     "state": "TX",
     "type": "hyperscale",
     "note": "Meta Fort Worth hyperscale campus",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -151,7 +160,8 @@
     "state": "TX",
     "type": "colo",
     "note": "Large colo market; energy hub",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -170,7 +180,8 @@
     "state": "TX",
     "type": "hyperscale",
     "note": "Fastest-growing US market; +1,909 MW in Q1 2026; 0.14% vacancy",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -189,7 +200,8 @@
     "state": "TX",
     "type": "hyperscale",
     "note": "Microsoft South Central US region; 0.20% vacancy",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -208,7 +220,8 @@
     "state": "TX",
     "type": "colo",
     "note": "Border/enterprise market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -227,7 +240,9 @@
     "state": "GA",
     "type": "hyperscale",
     "note": "#3 US market; ~3,257 MW; top market for construction H1 2026 (2,882 MW)",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": 3257,
+    "power_basis": "market inventory, Avison Young Q1 2026"
    }
   },
   {
@@ -246,7 +261,8 @@
     "state": "GA",
     "type": "hyperscale",
     "note": "Meta Newton County campus",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -265,7 +281,8 @@
     "state": "GA",
     "type": "colo",
     "note": "Emerging market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -284,7 +301,8 @@
     "state": "NC",
     "type": "colo",
     "note": "Charlotte-Raleigh primary market (CBRE)",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -303,7 +321,8 @@
     "state": "NC",
     "type": "colo",
     "note": "Research Triangle market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -322,7 +341,8 @@
     "state": "SC",
     "type": "colo",
     "note": "DC Blox regional network",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -341,7 +361,8 @@
     "state": "SC",
     "type": "colo",
     "note": "Secondary market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -360,7 +381,8 @@
     "state": "SC",
     "type": "colo",
     "note": "Secondary market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -379,7 +401,8 @@
     "state": "FL",
     "type": "colo",
     "note": "Subsea landing + colo",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -398,7 +421,8 @@
     "state": "FL",
     "type": "colo",
     "note": "LATAM gateway; subsea hub",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -417,7 +441,8 @@
     "state": "FL",
     "type": "colo",
     "note": "Growing FL market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -436,7 +461,8 @@
     "state": "FL",
     "type": "colo",
     "note": "Tourism/enterprise",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -455,7 +481,8 @@
     "state": "AL",
     "type": "colo",
     "note": "Southeast colo",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -474,7 +501,9 @@
     "state": "AL",
     "type": "hyperscale",
     "note": "Meta Huntsville AI campus (announced 2024); Google presence",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": 462,
+    "power_basis": "market total, 11 facilities, top providers Meta/DC BLOX"
    }
   },
   {
@@ -493,7 +522,8 @@
     "state": "AL",
     "type": "hyperscale",
     "note": "Meta Montgomery County AI campus announced",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -512,7 +542,8 @@
     "state": "TN",
     "type": "mixed",
     "note": "Google cloud region + colo",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -531,7 +562,9 @@
     "state": "TN",
     "type": "colo",
     "note": "Mississippi River logistics + colo",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": 1836,
+    "power_basis": "SpaceX Colossus 2 campus online, Shelby County TN"
    }
   },
   {
@@ -550,7 +583,8 @@
     "state": "TN",
     "type": "colo",
     "note": "TVA power market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -569,7 +603,8 @@
     "state": "TN",
     "type": "colo",
     "note": "Gigabit city, enterprise DCs",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -588,7 +623,8 @@
     "state": "LA",
     "type": "colo",
     "note": "Gulf coast market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -607,7 +643,8 @@
     "state": "MS",
     "type": "colo",
     "note": "State capital market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -626,7 +663,8 @@
     "state": "AR",
     "type": "colo",
     "note": "Secondary market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -645,7 +683,8 @@
     "state": "IL",
     "type": "mixed",
     "note": "Top-5 US market; 526 MW absorption Q1 2026; 350 S. Riverside flagship",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -664,7 +703,8 @@
     "state": "IL",
     "type": "colo",
     "note": "Largest suburban Chicago colo cluster",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -683,7 +723,8 @@
     "state": "MO",
     "type": "colo",
     "note": "Central US network hub",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -702,7 +743,8 @@
     "state": "MO",
     "type": "colo",
     "note": "Mississippi Valley market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -721,7 +763,8 @@
     "state": "MN",
     "type": "colo",
     "note": "Upper Midwest hub",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -741,7 +784,8 @@
     "type": "hyperscale",
     "note": "Google + Meta campuses; 'Iowa corridor'",
     "source": "research-2026",
-    "image_file": "File:Google_Data_Center,_Council_Bluffs_Iowa_(49062863796).jpg"
+    "image_file": "File:Google_Data_Center,_Council_Bluffs_Iowa_(49062863796).jpg",
+    "power_mw": null
    }
   },
   {
@@ -760,7 +804,8 @@
     "state": "IA",
     "type": "hyperscale",
     "note": "Microsoft West Des Moines; Apple Waukee campus; >12 hyperscale DCs statewide",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -779,7 +824,8 @@
     "state": "OH",
     "type": "hyperscale",
     "note": "AWS US East (Ohio) region; Meta + Google campuses",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -798,7 +844,8 @@
     "state": "OH",
     "type": "colo",
     "note": "Lake Erie market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -817,7 +864,8 @@
     "state": "OH",
     "type": "colo",
     "note": "Ohio Valley market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -836,7 +884,8 @@
     "state": "MI",
     "type": "colo",
     "note": "Midwest connectivity hub",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -855,7 +904,8 @@
     "state": "MI",
     "type": "colo",
     "note": "Switch SuperNAP campus",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -874,7 +924,9 @@
     "state": "IN",
     "type": "colo",
     "note": "Crossroads of America market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": 1000,
+    "power_basis": "AWS Project Rainier (New Carlisle) ~1 GW, Epoch AI Oct estimate"
    }
   },
   {
@@ -893,7 +945,8 @@
     "state": "WI",
     "type": "colo",
     "note": "Lake Michigan market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -912,7 +965,8 @@
     "state": "WI",
     "type": "hyperscale",
     "note": "Microsoft Azure campus, $3.3B+ investment",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -931,7 +985,8 @@
     "state": "WI",
     "type": "colo",
     "note": "State capital market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -950,7 +1005,8 @@
     "state": "KS",
     "type": "colo",
     "note": "Central Kansas market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -969,7 +1025,8 @@
     "state": "NY",
     "type": "mixed",
     "note": "#3-4 US market; 10+ MW pricing up 19% H1 2026",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -988,7 +1045,8 @@
     "state": "NJ",
     "type": "colo",
     "note": "800 8th Ave-style carrier hotels",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1007,7 +1065,8 @@
     "state": "NJ",
     "type": "colo",
     "note": "NJ Turnpike colo corridor",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1026,7 +1085,8 @@
     "state": "PA",
     "type": "colo",
     "note": "Mid-Atlantic hub",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1045,7 +1105,8 @@
     "state": "PA",
     "type": "colo",
     "note": "Allegheny market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1064,7 +1125,8 @@
     "state": "PA",
     "type": "colo",
     "note": "Fast-growing tertiary market (CBRE)",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1083,7 +1145,8 @@
     "state": "MA",
     "type": "mixed",
     "note": "New England hub; secondary market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1102,7 +1165,8 @@
     "state": "RI",
     "type": "colo",
     "note": "Secondary New England",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1121,7 +1185,8 @@
     "state": "CT",
     "type": "colo",
     "note": "Insurance/enterprise market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1140,7 +1205,8 @@
     "state": "NH",
     "type": "colo",
     "note": "Boston exurb market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1159,7 +1225,8 @@
     "state": "ME",
     "type": "colo",
     "note": "Northern New England",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1178,7 +1245,8 @@
     "state": "NY",
     "type": "colo",
     "note": "Niagara frontier, cheap power",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1197,7 +1265,8 @@
     "state": "NY",
     "type": "colo",
     "note": "NY state capital",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1216,7 +1285,8 @@
     "state": "NY",
     "type": "colo",
     "note": "Upstate NY",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1235,7 +1305,8 @@
     "state": "NY",
     "type": "colo",
     "note": "Upstate NY",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1254,7 +1325,8 @@
     "state": "CA",
     "type": "hyperscale",
     "note": "Primary market (CBRE); 8x8, 11666... major colo",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1273,7 +1345,8 @@
     "state": "CA",
     "type": "colo",
     "note": "SV core",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1292,7 +1365,8 @@
     "state": "CA",
     "type": "colo",
     "note": "415 Mission etc.",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1311,7 +1385,8 @@
     "state": "CA",
     "type": "colo",
     "note": "2nd largest US colo market; One Wilshire",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1330,7 +1405,8 @@
     "state": "CA",
     "type": "colo",
     "note": "Border + subsea",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1349,7 +1425,8 @@
     "state": "CA",
     "type": "colo",
     "note": "RagingWire campus; cheap power",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1369,7 +1446,8 @@
     "type": "hyperscale",
     "note": "Primary market; HQ hyperscale",
     "source": "research-2026",
-    "image_file": "File:Meta_(Facebook)_campus_in_Bellevue,_Washington.jpg"
+    "image_file": "File:Meta_(Facebook)_campus_in_Bellevue,_Washington.jpg",
+    "power_mw": null
    }
   },
   {
@@ -1388,7 +1466,8 @@
     "state": "WA",
     "type": "colo",
     "note": "Seattle exurbs",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1407,7 +1486,8 @@
     "state": "WA",
     "type": "hyperscale",
     "note": "Grant County PUD hydro power; Microsoft West US 2",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1426,7 +1506,8 @@
     "state": "OR",
     "type": "hyperscale",
     "note": "AWS US West (Oregon) region; Hillsboro primary market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1445,7 +1526,8 @@
     "state": "OR",
     "type": "colo",
     "note": "Secondary Oregon",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1464,7 +1546,8 @@
     "state": "CO",
     "type": "mixed",
     "note": "Secondary market; CoreSite HQ market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1483,7 +1566,8 @@
     "state": "CO",
     "type": "colo",
     "note": "Front Range secondary",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1502,7 +1586,8 @@
     "state": "UT",
     "type": "colo",
     "note": "0.18% vacancy (Q1 2026); fast-growing",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1521,7 +1606,8 @@
     "state": "UT",
     "type": "hyperscale",
     "note": "Meta Eagle Mountain campus",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1540,7 +1626,8 @@
     "state": "ID",
     "type": "hyperscale",
     "note": "Meta Boise campus announced 2025",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1559,7 +1646,9 @@
     "state": "NV",
     "type": "hyperscale",
     "note": "Switch SuperNAP flagship; largest US DC campus",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": 280,
+    "power_basis": "Switch SUPERNAP Vegas campus IT capacity, reported 2026"
    }
   },
   {
@@ -1579,7 +1668,9 @@
     "type": "hyperscale",
     "note": "Tahoe-Reno; Switch Citadel; Google Storey County; Apple Reno",
     "source": "research-2026",
-    "image_file": "File:Apple_datacenter_Reno_satellite_view.jpg"
+    "image_file": "File:Apple_datacenter_Reno_satellite_view.jpg",
+    "power_mw": 650,
+    "power_basis": "Switch Citadel campus IT capacity, reported 2026"
    }
   },
   {
@@ -1598,7 +1689,8 @@
     "state": "AZ",
     "type": "hyperscale",
     "note": "Top-5 primary market; huge growth",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1617,7 +1709,8 @@
     "state": "AZ",
     "type": "colo",
     "note": "Phoenix east valley",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1636,7 +1729,8 @@
     "state": "AZ",
     "type": "colo",
     "note": "Secondary AZ",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1655,7 +1749,8 @@
     "state": "NM",
     "type": "colo",
     "note": "Los Lunas nearby: Meta",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1674,7 +1769,8 @@
     "state": "NM",
     "type": "hyperscale",
     "note": "Meta Los Lunas campus (Valencia County)",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1693,7 +1789,8 @@
     "state": "WA",
     "type": "colo",
     "note": "Inland Northwest",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1712,7 +1809,8 @@
     "state": "AK",
     "type": "colo",
     "note": "Alaska market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1731,7 +1829,8 @@
     "state": "HI",
     "type": "colo",
     "note": "Pacific hub",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1750,7 +1849,8 @@
     "state": "PR",
     "type": "colo",
     "note": "US territory; Caribbean hub",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1769,7 +1869,8 @@
     "state": "OK",
     "type": "colo",
     "note": "Central Plains",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1788,7 +1889,8 @@
     "state": "OK",
     "type": "colo",
     "note": "Secondary OK",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1807,7 +1909,8 @@
     "state": "NE",
     "type": "colo",
     "note": "Nebraska market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1826,7 +1929,8 @@
     "state": "SD",
     "type": "colo",
     "note": "Dakotas hub",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1845,7 +1949,8 @@
     "state": "ND",
     "type": "colo",
     "note": "Upper Plains",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1864,7 +1969,8 @@
     "state": "MT",
     "type": "colo",
     "note": "Montana market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1883,7 +1989,8 @@
     "state": "MT",
     "type": "colo",
     "note": "Growing MT market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1902,7 +2009,8 @@
     "state": "WY",
     "type": "hyperscale",
     "note": "Microsoft West US (Cheyenne); wind power",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1921,7 +2029,8 @@
     "state": "WV",
     "type": "colo",
     "note": "WV market",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1940,7 +2049,8 @@
     "state": "KY",
     "type": "colo",
     "note": "Ohio Valley secondary",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1959,7 +2069,8 @@
     "state": "AR",
     "type": "colo",
     "note": "QTS Fayetteville - among largest US facilities",
-    "source": "research-2026"
+    "source": "research-2026",
+    "power_mw": null
    }
   },
   {
@@ -1979,7 +2090,8 @@
     "type": "hyperscale",
     "note": "Google's first self-built data center (2006); Columbia River hydro power",
     "source": "research-2026",
-    "image_file": "File:Google_Data_Center,_The_Dalles.jpg"
+    "image_file": "File:Google_Data_Center,_The_Dalles.jpg",
+    "power_mw": null
    }
   },
   {
@@ -1999,7 +2111,9 @@
     "type": "hyperscale",
     "note": "Facebook's first self-built data center (2011)",
     "source": "research-2026",
-    "image_file": "File:Outside_Facebook_Data_Center.jpg"
+    "image_file": "File:Outside_Facebook_Data_Center.jpg",
+    "power_mw": 1289,
+    "power_basis": "campus capacity, reported 2026"
    }
   },
   {
@@ -2019,7 +2133,9 @@
     "type": "hyperscale",
     "note": "Google Mayes County campus",
     "source": "research-2026",
-    "image_file": "File:Google_Mayes_County_P0004974a.jpg"
+    "image_file": "File:Google_Mayes_County_P0004974a.jpg",
+    "power_mw": 368,
+    "power_basis": "campus draw, Epoch AI estimate 2026"
    }
   }
  ]
