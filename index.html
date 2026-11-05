@@ -65,7 +65,15 @@
           const m = L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
             radius: 7, color: style.color, weight: 1.5, fillColor: style.fill, fillOpacity: 0.75
           });
+          const img = p.image_file
+            ? '<img src="https://commons.wikimedia.org/wiki/Special:FilePath/' +
+              p.image_file.replace(/ /g, '_') + '?width=640" ' +
+              'style="width:100%;border-radius:6px;margin-bottom:6px" loading="lazy" ' +
+              'alt="' + p.name + '" onerror="this.remove()">' +
+              '<small>Photo: Wikimedia Commons</small><br>'
+            : '';
           m.bindPopup(
+            img +
             '<b>' + p.name + '</b><br>' +
             p.city + ', ' + p.state + ' &middot; ' + style.label + '<br>' +
             '<b>Operators:</b> ' + (p.operator || 'n/a') + '<br>' +

@@ -17,7 +17,8 @@
     "state": "VA",
     "type": "hyperscale",
     "note": "Largest US market; ~6,485 MW inventory (Avison Young Q1 2026); 0.2% vacancy (CBRE H1 2026)",
-    "source": "research-2026"
+    "source": "research-2026",
+    "image_file": "File:Data_centers_in_Ashburn.jpg"
    }
   },
   {
@@ -739,7 +740,8 @@
     "state": "IA",
     "type": "hyperscale",
     "note": "Google + Meta campuses; 'Iowa corridor'",
-    "source": "research-2026"
+    "source": "research-2026",
+    "image_file": "File:Google_Data_Center,_Council_Bluffs_Iowa_(49062863796).jpg"
    }
   },
   {
@@ -1366,7 +1368,8 @@
     "state": "WA",
     "type": "hyperscale",
     "note": "Primary market; HQ hyperscale",
-    "source": "research-2026"
+    "source": "research-2026",
+    "image_file": "File:Meta_(Facebook)_campus_in_Bellevue,_Washington.jpg"
    }
   },
   {
@@ -1575,7 +1578,8 @@
     "state": "NV",
     "type": "hyperscale",
     "note": "Tahoe-Reno; Switch Citadel; Google Storey County; Apple Reno",
-    "source": "research-2026"
+    "source": "research-2026",
+    "image_file": "File:Apple_datacenter_Reno_satellite_view.jpg"
    }
   },
   {
@@ -1956,6 +1960,66 @@
     "type": "colo",
     "note": "QTS Fayetteville - among largest US facilities",
     "source": "research-2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.1815,
+     45.5951
+    ]
+   },
+   "properties": {
+    "name": "The Dalles (Google)",
+    "operator": "Google",
+    "city": "The Dalles",
+    "state": "OR",
+    "type": "hyperscale",
+    "note": "Google's first self-built data center (2006); Columbia River hydro power",
+    "source": "research-2026",
+    "image_file": "File:Google_Data_Center,_The_Dalles.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -120.8737,
+     44.2994
+    ]
+   },
+   "properties": {
+    "name": "Prineville (Meta/Facebook)",
+    "operator": "Meta",
+    "city": "Prineville",
+    "state": "OR",
+    "type": "hyperscale",
+    "note": "Facebook's first self-built data center (2011)",
+    "source": "research-2026",
+    "image_file": "File:Outside_Facebook_Data_Center.jpg"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.3989,
+     36.3089
+    ]
+   },
+   "properties": {
+    "name": "Pryor / Mayes County (Google)",
+    "operator": "Google",
+    "city": "Pryor",
+    "state": "OK",
+    "type": "hyperscale",
+    "note": "Google Mayes County campus",
+    "source": "research-2026",
+    "image_file": "File:Google_Mayes_County_P0004974a.jpg"
    }
   }
  ]

@@ -17,8 +17,10 @@ Or enable GitHub Pages (Settings → Pages → Deploy from branch → `/root`).
 
 `data/centers.geojson` holds 100+ US data center locations researched in 2026
 (CBRE / Avison Young market reports, operator announcements), each tagged with
-type (hyperscale / colocation / mixed), operators, and market notes. It can be
-regenerated/expanded from live sources with:
+type (hyperscale / colocation / mixed), operators, and market notes. Seven
+hyperscale campuses also have a photo (via Wikimedia Commons `image_file`),
+shown in the map popup when available. It can be regenerated/expanded from
+live sources with:
 
 ```bash
 pip install requests
