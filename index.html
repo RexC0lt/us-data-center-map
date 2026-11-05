@@ -66,8 +66,9 @@
           const type = p.type || 'colo';
           const style = TYPE_STYLE[type] || TYPE_STYLE.colo;
           if (!layers[type]) layers[type] = L.layerGroup();
+          const r = p.power_mw ? Math.min(22, 7 + Math.sqrt(p.power_mw) * 0.55) : 7;
           const m = L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
-            radius: 7, color: style.color, weight: 1.5, fillColor: style.fill, fillOpacity: 0.75
+            radius: r, color: style.color, weight: 1.5, fillColor: style.fill, fillOpacity: 0.75
           });
           const img = p.image_file
             ? '<img src="https://commons.wikimedia.org/wiki/Special:FilePath/' +
@@ -81,13 +82,14 @@
             '<b>' + p.name + '</b><br>' +
             p.city + ', ' + p.state + ' &middot; ' + style.label + '<br>' +
             '<b>Operators:</b> ' + (p.operator || 'n/a') + '<br>' +
+            (p.power_mw ? '<b>Power:</b> ' + p.power_mw.toLocaleString() + ' MW <small>(' + p.power_basis + ')</small><br>' : '') +
             (p.note ? '<i>' + p.note + '</i><br>' : '') +
             '<small>Source: ' + p.source + '</small>'
           );
           layers[type].addLayer(m);
           markers.push({
-            marker: m, type,
-            text: (p.name + ' ' + (p.operator || '') + ' ' + p.city + ' ' + p.state + ' ' + type).toLowerCase()
+            marker: m, type, source: p.source || 'other',
+            text: (p.name + ' ' + (p.operator || '') + ' ' + p.city + ' ' + p.state + ' ' + type + ' ' + (p.source || '')).toLowerCase()
           });
         });
         Object.values(layers).forEach(g => clusters.addLayer(g));
@@ -97,6 +99,14 @@
           const label = document.createElement('label');
           label.innerHTML = '<input type="checkbox" checked data-type="' + type + '">' +
             '<span class="swatch" style="background:' + TYPE_STYLE[type].fill + '"></span>' + TYPE_STYLE[type].label;
+          filters.appendChild(label);
+        });
+        const srcHead = document.createElement('div');
+        srcHead.innerHTML = '<b style="display:block;margin-top:8px">Sources</b>';
+        filters.appendChild(srcHead);
+        [...new Set(markers.map(m => m.source))].sort().forEach(src => {
+          const label = document.createElement('label');
+          label.innerHTML = '<input type="checkbox" checked data-source="' + src + '"> ' + src;
           filters.appendChild(label);
         });
         filters.addEventListener('change', applyFilters);
@@ -111,13 +121,18 @@
       return !cb || cb.checked;
     }
 
+    function sourceEnabled(src) {
+      const cb = document.querySelector('input[data-source="' + src + '"]');
+      return !cb || cb.checked;
+    }
+
     function applyFilters() {
       const q = query();
       let visible = 0;
       Object.entries(layers).forEach(([type, group]) => {
         group.clearLayers();
         if (!typeEnabled(type)) return;
-        markers.filter(m => m.type === type && (!q || m.text.includes(q)))
+        markers.filter(m => m.type === type && sourceEnabled(m.source) && (!q || m.text.includes(q)))
                .forEach(m => { group.addLayer(m.marker); visible++; });
       });
       countEl.textContent = visible + ' of ' + markers.length + ' locations shown';
@@ -126,7 +141,7 @@
     function zoomToFirstMatch() {
       const q = query();
       if (!q) return;
-      const hit = markers.find(m => typeEnabled(m.type) && m.text.includes(q));
+      const hit = markers.find(m => typeEnabled(m.type) && sourceEnabled(m.source) && m.text.includes(q));
       if (hit) {
         const ll = hit.marker.getLatLng();
         map.setView(ll, Math.max(map.getZoom(), 8));

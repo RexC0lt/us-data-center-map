@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
-"""Fetch US data center locations from OpenStreetMap (Overpass) and PeeringDB,
-dedupe them, and write a GeoJSON file for the map frontend.
+"""Build data/centers.geojson for the map.
+
+Merges two source families:
+  1. Live facility-level points: OpenStreetMap (Overpass) + PeeringDB, US only.
+  2. The researched hub list already in data/centers.geojson (source
+     "research-2026") — kept as-is because it carries notes, power figures
+     and photos.
+
+Dedupes across everything within 1 km, preferring researched entries.
 
 Usage: python3 scripts/fetch_data.py [--out data/centers.geojson]
-Requires: requests
 """
 import argparse
 import json
 import math
+import os
 import urllib.parse
 import urllib.request
 
@@ -59,6 +66,8 @@ def from_osm():
                 "name": tags.get("name") or tags.get("operator") or "Unnamed",
                 "operator": tags.get("operator"),
                 "city": tags.get("addr:city"),
+                "state": tags.get("addr:state"),
+                "type": "colo",
                 "source": "osm",
             },
         })
@@ -79,15 +88,25 @@ def from_peeringdb():
                 "name": fac.get("name") or "Unnamed",
                 "operator": fac.get("org"),
                 "city": fac.get("city"),
+                "state": fac.get("state"),
+                "type": "colo",
                 "source": "peeringdb",
             },
         })
     return feats
 
 
+def load_researched(path):
+    if not os.path.exists(path):
+        return []
+    with open(path) as fh:
+        fc = json.load(fh)
+    return [f for f in fc.get("features", []) if str(f.get("properties", {}).get("source", "")).startswith("research")]
+
+
 def dedupe(features, threshold_km=1.0):
     kept = []
-    for f in features:
+    for f in features:  # researched entries come first, so they win ties
         c = f["geometry"]["coordinates"]
         if all(haversine_km((c[1], c[0]), (k["geometry"]["coordinates"][1], k["geometry"]["coordinates"][0])) > threshold_km for k in kept):
             kept.append(f)
@@ -99,12 +118,14 @@ def main():
     ap.add_argument("--out", default="data/centers.geojson")
     args = ap.parse_args()
 
-    features = from_osm() + from_peeringdb()
-    features = dedupe(features)
+    researched = load_researched(args.out)
+    live = from_osm() + from_peeringdb()
+    features = dedupe(researched + live)
     fc = {"type": "FeatureCollection", "features": features}
     with open(args.out, "w") as fh:
         json.dump(fc, fh)
-    print(f"Wrote {len(features)} features to {args.out}")
+    n_research = sum(1 for f in features if str(f["properties"].get("source", "")).startswith("research"))
+    print(f"Wrote {len(features)} features to {args.out} ({n_research} researched, {len(features) - n_research} live)")
 
 
 if __name__ == "__main__":
