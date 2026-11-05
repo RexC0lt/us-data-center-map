@@ -18,6 +18,10 @@
     }
     #panel h1 { font-size: 16px; margin: 0 0 8px; }
     #panel label { display: block; margin: 4px 0; cursor: pointer; }
+    #search {
+      width: 100%; box-sizing: border-box; padding: 6px 8px; margin-bottom: 8px;
+      border: 1px solid #ccc; border-radius: 6px; font: 14px system-ui, sans-serif;
+    }
     .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
     #count { margin-top: 8px; font-weight: 600; }
     .leaflet-popup-content { font: 13px/1.5 system-ui, sans-serif; max-width: 280px; }
@@ -27,6 +31,7 @@
   <div id="map"></div>
   <div id="panel">
     <h1>US Data Centers</h1>
+    <input id="search" type="search" placeholder="Search name, operator, city, state..." />
     <div id="filters"></div>
     <div id="count"></div>
   </div>
@@ -47,9 +52,11 @@
     }).addTo(map);
 
     const clusters = L.markerClusterGroup();
-    const layers = {};
+    const layers = {};        // type -> layer group (holds that type's markers)
+    const markers = [];       // { marker, type, text } for search
     const filters = document.getElementById('filters');
     const countEl = document.getElementById('count');
+    const searchEl = document.getElementById('search');
 
     fetch('data/centers.geojson')
       .then(r => r.json())
@@ -58,10 +65,7 @@
           const p = f.properties;
           const type = p.type || 'colo';
           const style = TYPE_STYLE[type] || TYPE_STYLE.colo;
-          if (!layers[type]) {
-            layers[type] = L.layerGroup();
-            clusters.addLayer(layers[type]);
-          }
+          if (!layers[type]) layers[type] = L.layerGroup();
           const m = L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
             radius: 7, color: style.color, weight: 1.5, fillColor: style.fill, fillOpacity: 0.75
           });
@@ -81,6 +85,10 @@
             '<small>Source: ' + p.source + '</small>'
           );
           layers[type].addLayer(m);
+          markers.push({
+            marker: m, type,
+            text: (p.name + ' ' + (p.operator || '') + ' ' + p.city + ' ' + p.state + ' ' + type).toLowerCase()
+          });
         });
         map.addLayer(clusters);
         Object.keys(TYPE_STYLE).forEach(type => {
@@ -90,23 +98,39 @@
             '<span class="swatch" style="background:' + TYPE_STYLE[type].fill + '"></span>' + TYPE_STYLE[type].label;
           filters.appendChild(label);
         });
-        filters.addEventListener('change', e => {
-          const type = e.target.dataset.type;
-          if (!type) return;
-          if (e.target.checked) clusters.addLayer(layers[type]);
-          else clusters.removeLayer(layers[type]);
-          updateCount();
-        });
-        updateCount();
+        filters.addEventListener('change', applyFilters);
+        searchEl.addEventListener('input', () => { applyFilters(); zoomToFirstMatch(); });
+        applyFilters();
       });
 
-    function updateCount() {
-      const total = Object.values(layers).reduce((a, l) => a + l.getLayers().length, 0);
-      const visible = Object.entries(layers).reduce((a, [t, l]) => {
-        const cb = document.querySelector('input[data-type="' + t + '"]');
-        return a + (cb && cb.checked ? l.getLayers().length : 0);
-      }, 0);
-      countEl.textContent = visible + ' of ' + total + ' locations shown';
+    function query() { return searchEl.value.trim().toLowerCase(); }
+
+    function typeEnabled(type) {
+      const cb = document.querySelector('input[data-type="' + type + '"]');
+      return !cb || cb.checked;
+    }
+
+    function applyFilters() {
+      const q = query();
+      let visible = 0;
+      Object.entries(layers).forEach(([type, group]) => {
+        group.clearLayers();
+        if (!typeEnabled(type)) return;
+        markers.filter(m => m.type === type && (!q || m.text.includes(q)))
+               .forEach(m => { group.addLayer(m.marker); visible++; });
+      });
+      countEl.textContent = visible + ' of ' + markers.length + ' locations shown';
+    }
+
+    function zoomToFirstMatch() {
+      const q = query();
+      if (!q) return;
+      const hit = markers.find(m => typeEnabled(m.type) && m.text.includes(q));
+      if (hit) {
+        const ll = hit.marker.getLatLng();
+        map.setView(ll, Math.max(map.getZoom(), 8));
+        hit.marker.openPopup();
+      }
     }
   </script>
 </body>
